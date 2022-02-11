@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
                 ('email', models.CharField(blank=True, max_length=255)),
                 ('data_criacao', models.DateTimeField(default=django.utils.timezone.now)),
                 ('descricao', models.TextField(blank=True)),
-                ('categoria', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='contatos.categoria')),
+                ('categoria', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='contatos.Categoria')),
             ],
         ),
     ]
